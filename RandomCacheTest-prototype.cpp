@@ -84,7 +84,7 @@ int main()
 			end_t = clock();
 			std::cout << "accessing cycles of cached data: " << end_t - start_t << std::endl;
 
-			val[TEST_TIME - test_times] = end_t - start_t;
+			val[TEST_TIME - test_times - 1] = end_t - start_t;
 		}
 
 		/* calculate the average accessing cycles */
